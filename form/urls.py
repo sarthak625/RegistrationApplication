@@ -9,7 +9,6 @@ urlpatterns = [
     url(r'^logout/$',logout, {'template_name':'form/logout.html'}),
     url(r'^register/$', views.register, name='register'),
     url(r'^register_fail/$' , views.reg_fail , name='reg_fail'),
-
     url(r'^api/$',views.UserList.as_view()),
     url(r'^api/(?P<pk>[0-9]+)/$',views.UserList.as_view()),
 
